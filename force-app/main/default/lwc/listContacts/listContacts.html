@@ -1,0 +1,15 @@
+<template>
+    <lightning-card icon-name="standard:account" variant="base">
+      <div slot="title">
+          Lista de contatos
+      </div>
+      <div>
+        <lightning-datatable
+          key-field="id"
+          data={contacts.data}
+          columns={columns}
+          hide-checkbox-column="true"
+        ></lightning-datatable>
+      </div>
+    </lightning-card>
+</template>
